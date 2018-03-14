@@ -218,22 +218,43 @@
 <h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><ul>
 <li><p>一点智慧、一点智慧Pad <code>2名Android</code></p>
 <ul>
-<li><p>主要负责：<figure class="highlight plain"><figcaption><span>Code扫描```、```蓝牙开锁```、```会议室/工位预定```、```订单```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">	+  主要功能：**工位/会议室预定**、**QR Code扫描**、**蓝牙开门**</span><br><span class="line">	+  使用RxJava2+Retrofit2+OkHttp3 做网络请求，配合自定义的Annotation对接口进行缓存策略定义，md5 url作为文件名保存在本地，文件以Disk Lru形式保存，主要从原来的Rx1.1转到2.0的代码上修改</span><br><span class="line">	+  初步使用Lambda和Java8 特性在项目中，减少代码量，优化阅读，使用第三方Stream库做兼容</span><br><span class="line">	+  初步使用kotlin 完成pad项目部分页面</span><br><span class="line">	+  改善蓝牙搜索，结合BLE和广播形式，对搜索结果进行整合</span><br><span class="line">	+  项目采用模块化，使用**org.greenrobot.eventbus 3 **进行数据回调</span><br><span class="line">	+  使用OTG 串口通讯协议对RS232单片机联动，单片机连接电磁铁门，实现Pad应用在业务完整下进行开锁和关门操作</span><br><span class="line">	+  使用netty 包进行socket通讯</span><br><span class="line">	+  简单的icon使用svg格式，在适配上更加灵活，减少包大小</span><br><span class="line">	+  使用butterknife、arouter、zxing、glide4.0、BRVAH、Realm等第三方库</span><br><span class="line">	</span><br><span class="line">- 万门大学、万门中学、万门Tv `4名Android`</span><br><span class="line">	+ 主要负责：```下载```、```视频```、```开发框架</span><br></pre></td></tr></table></figure></p>
+<li>主要负责：<code>开发框架</code>、<code>QR Code扫描</code>、<code>蓝牙开锁</code>、<code>会议室/工位预定</code>、<code>订单</code></li>
+<li>主要功能：<strong>工位/会议室预定</strong>、<strong>QR Code扫描</strong>、<strong>蓝牙开门</strong></li>
+<li>使用RxJava2+Retrofit2+OkHttp3 做网络请求，配合自定义的Annotation对接口进行缓存策略定义，md5 url作为文件名保存在本地，文件以Disk Lru形式保存，主要从原来的Rx1.1转到2.0的代码上修改</li>
+<li>初步使用Lambda和Java8 特性在项目中，减少代码量，优化阅读，使用第三方Stream库做兼容</li>
+<li>初步使用kotlin 完成pad项目部分页面</li>
+<li>改善蓝牙搜索，结合BLE和广播形式，对搜索结果进行整合</li>
+<li>项目采用模块化，使用<strong>org.greenrobot.eventbus 3 </strong>进行数据回调</li>
+<li>使用OTG 串口通讯协议对RS232单片机联动，单片机连接电磁铁门，实现Pad应用在业务完整下进行开锁和关门操作</li>
+<li>使用netty 包进行socket通讯</li>
+<li>简单的icon使用svg格式，在适配上更加灵活，减少包大小</li>
+<li>使用butterknife、arouter、zxing、glide4.0、BRVAH、Realm等第三方库</li>
+</ul>
 </li>
-<li><p>主要功能： <strong>视频播放/下载</strong>、<strong>直播/IM功能</strong>、<strong>课程购买</strong></p>
-</li>
+<li><p>万门大学、万门中学、万门Tv <code>4名Android</code></p>
+<ul>
+<li>主要负责：<code>下载</code>、<code>视频</code>、<code>开发框架</code></li>
+<li>主要功能： <strong>视频播放/下载</strong>、<strong>直播/IM功能</strong>、<strong>课程购买</strong></li>
 <li>视频采用m3u8，下载视频使用AsyncTask单线程对视频进行下载，采用LocalBroadcastReceiver进行广播</li>
 <li>参考Google MVP 架构模式搭建框架，为项目添加findebugs、checkstyle配置进行项目走查，为了更好了解对方的代码，提升代码质量，从代码中提前发现问题，采用提pr形式进行代码review 合并</li>
 <li>部分页面转为H5页面，利用JS、链接跳转进行native交互</li>
 <li>拆解项目为多个Model，在不同的项目，建立res Model作为样式的差异化</li>
 </ul>
 </li>
-<li><p>穷游 穷游锦囊 <code>12名Android</code></p>
-<ul>
-<li><p>主要负责：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	+  主要功能： **折扣**、**当地游**、**锦囊**、**社区**</span><br><span class="line">	+  使用RxJava1.1+Retrofit+OkHttp ，为防止用户间的缓存错乱，使用Annotation加入Tag标识，提供五种请求方法，只读网络，串行/并行读取缓存和网络，只读缓存，有缓存使用缓存无则网络，使用rxlifecycle进行Rx生命周期管理</span><br><span class="line">	+  使用WebView展示锦囊信息，种cookie，完成webview的各项本地操作，如电话、查看图片、activity内跳转等</span><br><span class="line">	+  通过build 的productFlavors 建立测试和开发环境以及一些配置信息，避免打包导致的错误</span><br><span class="line">	+  使用RecyclerView多布局编写日历选择控件，并显示节假日信息</span><br><span class="line">	+   统一处理共同的业务，如网络请求的业务处理引发的UI操作和错误提示</span><br><span class="line">	+  封装微信支付，阿里支付sdk；Builder模式封装分享sdk</span><br><span class="line">- 民政通 `6名Android`</span><br><span class="line">	+ 主要负责：```二维码```、```开发框架```、```短信猫</span><br></pre></td></tr></table></figure></p>
+<li>穷游 穷游锦囊 <code>12名Android</code><ul>
+<li>主要负责：<code>个人信息相关</code>、<code>在路上</code>、<code>锦囊</code>、<code>酒店</code>、<code>分享整合</code></li>
+<li>主要功能： <strong>折扣</strong>、<strong>当地游</strong>、<strong>锦囊</strong>、<strong>社区</strong></li>
+<li>使用RxJava1.1+Retrofit+OkHttp ，为防止用户间的缓存错乱，使用Annotation加入Tag标识，提供五种请求方法，只读网络，串行/并行读取缓存和网络，只读缓存，有缓存使用缓存无则网络，使用rxlifecycle进行Rx生命周期管理</li>
+<li>使用WebView展示锦囊信息，种cookie，完成webview的各项本地操作，如电话、查看图片、activity内跳转等</li>
+<li>通过build 的productFlavors 建立测试和开发环境以及一些配置信息，避免打包导致的错误</li>
+<li>使用RecyclerView多布局编写日历选择控件，并显示节假日信息</li>
+<li>统一处理共同的业务，如网络请求的业务处理引发的UI操作和错误提示</li>
+<li>封装微信支付，阿里支付sdk；Builder模式封装分享sdk</li>
+</ul>
 </li>
-<li><p>主要功能： <strong>咨询信息</strong>、<strong>办证</strong>、<strong>二维码证件</strong></p>
-</li>
+<li>民政通 <code>6名Android</code><ul>
+<li>主要负责：<code>二维码</code>、<code>开发框架</code>、<code>短信猫</code></li>
+<li>主要功能： <strong>咨询信息</strong>、<strong>办证</strong>、<strong>二维码证件</strong></li>
 <li>封装ListView Adapter，使用Map保存控件，减少ViewHolder和findViewById的代码</li>
 <li>封装网络请求工具类 HttpConnection+AsyncTask+fastjson，使用文件缓存形式缓存数据</li>
 <li>自封装ImageLoader ，使用LRU 实现二级缓存，内存缓存中需要的Size图片，本地文件缓存原始图片</li>
